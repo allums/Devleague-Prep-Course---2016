@@ -47,6 +47,37 @@ function isFalse(val) {
 console.log(isFalse(300));
 
 
+//Function - isEqual
+//Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.
+
+
+function isEqual(firstWord, secondWord) {
+	if (firstWord === secondWord) {
+		return "AWWWWRIGHT";
+	}
+	else {
+		return "Y U NO MATCH!";
+	}
+}
+console.log(isEqual("hello", "bye"));
+
+
+//Function - isNotEqual
+//Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.
+
+
+function isNotEqual(firstWord, secondWord) {
+	if (firstWord !== secondWord) {
+		return "AWWWWRIGHT";
+	}
+	else {
+		return "Y U MATCH";
+	}
+}
+console.log(isNotEqual("no", "yes"));
+
+
+
 
 
 
