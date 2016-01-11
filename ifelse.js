@@ -77,6 +77,18 @@ function isNotEqual(firstWord, secondWord) {
 console.log(isNotEqual("no", "yes"));
 
 
+//Function - doubleEquals
+//Write a function that takes two variables of type Boolean called first and secondrespectively. Return true if both values are true otherwise return false.
+
+function doubleEquals(first, second) {
+	if (first && second === true) {
+    return "Both true";
+	}
+	else {
+		return "false";
+	}
+}
+
 
 
 
