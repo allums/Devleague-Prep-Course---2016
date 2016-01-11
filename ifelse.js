@@ -104,5 +104,19 @@ function totalOver30(num1, num2, num3) {
 }
 
 
+//Function - totalUnderWhat
+//Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.
+
+function totalUnderWhat(first, second, third, fourth) {
+	var added = first + second + third;
+	if (added < fourth) {
+		return true;
+	}
+    else {
+    	return false;
+    }
+}
+
+
 
 
