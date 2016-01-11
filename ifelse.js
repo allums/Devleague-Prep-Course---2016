@@ -128,7 +128,36 @@ function loopToNumber(limit) {
 		}
 	}
 loopToNumber(5);
-	
+
+
+//Function - showEachValue
+//Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.
+
+
+function showEachValue() {
+  var character = ["A", "B", "C", "D", "E"];
+  for (var i = 0; i < character.length; i++) {
+  	console.log(character[i]);
+  }
+}
+showEachValue();
+
+
+
+
+
+//Function - createArrayFromString
+//Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.
+
+//Function - greatSummator
+//Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.
+
+//Function - totalUnderWhatFor
+//Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.
+
+//Function - checkTrueValues
+//Write a function that takes an Array with any number of type Boolean values and write a for loop to call our isTrue function with each value as input and return true if all values return true from our isTrue function.
+
 	
 
 
