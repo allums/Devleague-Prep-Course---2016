@@ -89,8 +89,19 @@ function doubleEquals(first, second) {
 	}
 }
 
+//Function - totalOver30
+//Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.
 
 
+function totalOver30(num1, num2, num3) {
+	var total = num1 + num2 + num3;
+	if (total > 30) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
 
 
 
