@@ -118,5 +118,21 @@ function totalUnderWhat(first, second, third, fourth) {
 }
 
 
+//Function - looptoNumber
+//Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.
+
+
+function loopToNumber(limit) {
+	for (var i = 0;  i < limit; i++) {
+		console.log(i);
+		}
+	}
+loopToNumber(5);
+	
+	
+
+
+
+
 
 
