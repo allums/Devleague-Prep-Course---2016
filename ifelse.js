@@ -134,26 +134,61 @@ loopToNumber(5);
 //Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.
 
 
-function showEachValue() {
-  var character = ["A", "B", "C", "D", "E"];
-  for (var i = 0; i < character.length; i++) {
-  	console.log(character[i]);
+function showEachValue(characters) {
+  for (var i = 0; i < characters.length; i++) {
+  	console.log(characters[i]);
   }
 }
-showEachValue();
-
-
-
+var myCharac = ["A", "B", "C", "D", "E"];
+showEachValue(myCharac);
 
 
 //Function - createArrayFromString
 //Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.
+var word = ["H", "E", "L", "L", "O"];
+
+var word = "Aloha";
+var arr = [];
+
+function createArrayFromString(word) {
+	for (var i = 0; i < word.length; i++) {
+      if (word[i] !== "A" && word[i] !== "a") {
+        arr.push(word[i]);
+      }
+	  else {
+        console.log(arr);
+      }
+	}
+}
+createArrayFromString(word);
+
+
 
 //Function - greatSummator
 //Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.
 
+var numbers = [2, 5, 8, 12];
+var totalNum = 0;
+function addIt(total) {
+	for (var i = 0; numbers.length; i++) {
+		totalNum += numbers[i];
+      console.log('add the number ' + numbers[i]);
+        console.log(totalNum);
+	}
+}
+addIt(numbers);
+
 //Function - totalUnderWhatFor
 //Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.
+
+function totalUnderWhatFor(number, total) {
+	var myArray = [10, 20, 30, 40];
+	if myArray < total {
+		return true;
+	}
+}
+
+
 
 //Function - checkTrueValues
 //Write a function that takes an Array with any number of type Boolean values and write a for loop to call our isTrue function with each value as input and return true if all values return true from our isTrue function.
