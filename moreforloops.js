@@ -38,5 +38,16 @@ for (var i = 0; i < oopsArray.length; i++) {
   	oopsArray[i] = 'nope';
   }
  }
+ console.log(oopsArray);
+
+
+ //Going backwards?!
+
+//Using a FOR loop, iterate through the Array stored at oopsArray backwards. console.log each value in the Array.
+
+for (var i = oopsArray.length-1; i >= 0; i -= 1) {
  console.log(oopsArray[i]);
+}
+
+
 
