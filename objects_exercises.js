@@ -145,3 +145,49 @@ Invoke your function and pass in your object, store the result to a variable and
 
 Go ahead and create some more objects and pass them to this function. Have fun with it.*/
 
+var hello = {
+  a: 10,
+  b: 10,
+  result: a + b,
+  total: hello.result
+};
+
+var goodbye = {};
+  goodbye.a = 15;
+  goodbye.b = 15;
+  goodbye.result = goodbye.a + goodbye.b;
+  var total = goodbye.result;
+
+
+function doThis(object) {
+  return total;
+}
+console.log(doThis(hello));
+
+
+/*Declare a function and a single parameter which will be an object. Within this function, write a FOR loop that adds 10 random number values to the array referenced at the contents property of the object being passed in. This function will return the object.
+
+Invoke your function and pass in your object (which should be plainBox), store the result to a variable and use console.log to inspect your results.*/
+
+function randomNumber(i) {
+  var randomNumbers = [23, 10, 5, 3, 4, 1 , 103, 27];
+  return randomNumbers[i];
+}
+
+
+function putStuff(box) {
+  var contentsToPut = [];
+  for (var i = 0; i < 10; i++) {
+    contentsToPut.push(randomNumber(i));
+  }
+  box.contents = contentsToPut;
+  return box;
+}
+
+var plainBox = {};
+plainBox.contents = [];
+console.log(putStuff(plainBox));
+console.log(plainBox);
+
+
+
