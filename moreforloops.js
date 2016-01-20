@@ -69,7 +69,27 @@ for (var i = 0; i < napSchedule.length; i++) {
   nap(napSchedule[i]);
 }
 
-// Copy Of Arrays
+//Naptime
+
+var isNapTime = false;
+var napSchedule = [false, false, true, false, true, true];
+
+function nap(schedule) {
+
+  if (schedule === true) {
+    console.log("ZzZzZzZ");
+  }
+  else {
+    console.log("gotta get to work!");
+    isNapTime = true;
+  }
+ }
+
+for (var i = 0; i < napSchedule.length; i++) {
+  nap(napSchedule[i]);
+}
+
+//Copy of Values Array
 
 var copyOfValuesArray = [];
 var valuesArray = [99, 66, 829, 1941, 8, 76];
@@ -83,5 +103,4 @@ copyArray(copyOfValuesArray, valuesArray);
 
 console.log(copyOfValuesArray);
 console.log(valuesArray);
-
 
